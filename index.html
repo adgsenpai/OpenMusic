@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.svg">
+    <title>
+        OpenMusic
+    </title>
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+    <!-- Nucleo Icons -->
+    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link id="pagestyle" href="./assets/css/soft-ui-dashboard.css?v=1.0.3" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://cdn.plyr.io/3.6.2/plyr.css'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>Open Music</h3>
+        <div id="Controls">
+
+        </div>
+        <div class="column add-bottom">
+
+            <div id="plwrap">
+                <ul id="plList"></ul>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgb(0 0 0 / 15%);
+    backdrop-filter: blur(17px);
+    text-align: rgb(34, 34, 34)er;
+    position: fixed;
+    bottom: 0;
+    box-sizing: border-box;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -0%);border-radius: 38px;">
+        <div id="nowPlay">
+            <span style="color: black;" id="npAction">User Paused Song...</span><span style="color: black;" id="npTitle"></span>
+
+            <div class="row">
+                <div class="col">
+                    <img id="animation" style="visibility:hidden;width: 100px;" src="/assets/img/songplaying.gif">
+                </div>
+                <div class="col">
+                    <img id="coverart" style="    visibility: visible;
+                    width: 100px;
+                    /* margin-block: -35px; */
+                    margin-left: 235px;
+                    margin-top: -36px;
+                    border-radius: 21px; pointer-events: none;">
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+        <div id="audiowrap">
+            <div id="audio0">
+                <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+            </div>
+            <div id="tracks">
+                <a style="color: black;" id="btnPrev">&larr;</a><a style="color: black;" id="btnNext">&rarr;</a>
+            </div>
+
+        </div>
+        <div class="input-group mb-4 ">
+            <span class="input-group-text "><i class="ni ni-zoom-split-in "></i></span>
+            <input onkeyup="search() " class="form-control " id="edtSearch" placeholder="Search for song tracks " type="text ">
+        </div>
+        <br>
+        <h6 style="color: black;text-align:center;">Crafted with ❤️ from Ashlin Darius Govindasamy. <br> A fun project by <a style="color: #2323f1;" href="https://adgstudios.co.za/">ADGSTUDIOS</a></h6>
+        <br>
+    </div>
+
+    </div>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.8/plyr.min.js'></script>
+    <script src="./assets/js/script.js "></script>
+
+</body>
+
+<script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+        var options = {
+            damping: '0.5'
+        }
+        Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+</script>
+<!-- Github buttons -->
+<script async defer src="https://buttons.github.io/buttons.js "></script>
+<script src="./assets/js/soft-ui-dashboard.min.js?v=1.0.3 "></script>
+<script src="./assets/js/search.js "></script>
+</body>
+
+</html>
